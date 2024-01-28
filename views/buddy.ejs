@@ -1,0 +1,55 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy</title>
+    <link rel="stylesheet" href="buddy.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
+
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+<body>
+    <div id="bill-board">
+        <div id="notice-board">
+            <button id="notice-board-cancel-button">X</button>
+            <p id="admin-name"></p>
+            <p id="last-updated"></p>
+            <textarea name="" id="notice-board-message" rows="7" readonly></textarea>
+
+        </div>
+    </div>
+    <div id="login-info-container">
+        <div id="login-info-box">
+            <button id="login-info-cancel-button">X</button>
+            <p id="user-name"></p>
+                <textarea  id="bill-board-msg" autofocus placeholder="Enter the message" rows="7" ></textarea>
+                <button id="message-button">Send</button>
+        </div>
+    </div>
+    <div class="roomcode-container">
+        <button id="notice-board-button">Notice</button>
+        <img src="/img/login.png" alt="login"  id="login-info">
+        <h4 id="room-code">Tracker Id <span id="room-id"> </span> </h4>
+       <img src="/img/buddy_location.jpeg" alt="find me" id="buddy-location-find-me">
+    </div> 
+    <div class="main-container">
+        <video autoplay loop muted plays-inline class="video-background-map">
+            <source    src="img/Cherry Blossom - Animated Background(1080P_60FPS).mp4" type="video/mp4">
+        </video>
+        <div class="map-container" id="map"></div>
+        <div class="ipAdd-container"><button id="ip-add">Share</button></div>
+         <div class="confirm-container"><button class="ip-confirm-button-cancel">X</button><h3 id="confirm-msg">Are you sure. You want to share your location?</h3>
+            <button id="confirm-share-button">Confirm</button>
+         </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script type="module" src="buddy.js" > </script>
+    </body>
+</html>
+

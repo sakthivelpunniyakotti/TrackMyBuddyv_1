@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+   
+    <div class="main-container">
+        <video autoplay loop muted plays-inline class="video-background-tracker">
+            <source    src="img/Cherry Blossom - Animated Background(1080P_60FPS).mp4" type="video/mp4">
+        </video>
+        <div class="user-login-container">
+            <button class="reload">Reload</button>
+            <form >
+                <label for="user-name">
+                    <h3>First Name </h3>
+                    <input  type="text" id="first-name" placeholder="First Name" autofocus >
+                </label>
+                <label for="user-name">
+                    <h3>Last Name </h3>
+                    <input  type="text" id="last-name" placeholder="Last Name" autofocus>
+                </label>
+                <label for="user-name">
+                    <h3>Email id </h3>
+                    <input  type="text" id="mail-id" placeholder="Email" autofocus>
+                </label>
+                <label for="password">
+                    <h3>Password </h3>
+                    <input type="password" id="password" placeholder="Password">
+                </label>
+                <label for="password">
+                    <h3>Confirm Password </h3>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </label>
+            </form>
+           <div class="lock-container">
+            <img src="img/padlock-black-icon.png" alt="" id="lock">
+            <img src="img/unlock-icon.png" alt="" id="unlock">
+           </div>
+        </div>
+        <div class="create-button-container">
+            <!-- <button class="create-button"><a href="buddy" target="_blank">Create</a></button> -->
+            <button class="submit-button">Submit</button>
+            <!-- <div class="rocket-container"><img src="/img/icons8-rocket-64.png"  id="rocket-animation"></div> -->
+        </div>
+    </div>
+</body>
+
+<script type="module" src="signUp.js"></script>
+</html>

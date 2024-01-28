@@ -1,0 +1,40 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="buddyLogin.css">
+</head>
+<body>
+   
+    <div class="main-container">
+        <video autoplay loop muted plays-inline class="video-background-tracker">
+            <source    src="img/Cherry Blossom - Animated Background(1080P_60FPS).mp4" type="video/mp4">
+        </video>
+        <div class="user-login-container">
+            <button class="reload">Reload</button>
+            <form >
+                <label for="user-name">
+                    <h3>Email</h3>
+                    <input autofocus type="email" id="user-name" placeholder="Email Id" autofocus>
+                </label>
+                <label for="password">
+                    <h3>Password </h3>
+                    <input type="password" id="password" placeholder="Password ">
+                </label>
+            </form>
+           <div class="lock-container">
+            <img src="img/padlock-black-icon.png" alt="" id="lock">
+            <img src="img/unlock-icon.png" alt="" id="unlock">
+           </div>
+        </div>
+        <div class="create-button-container">
+            <button class="create-button"><a href="buddy" >Create</a></button>
+            <button class="submit-button">Submit</button>
+            <!-- <div class="rocket-container"><img src="/img/icons8-rocket-64.png"  id="rocket-animation"></div> -->
+        </div>
+    </div>
+</body>
+<script type="module" src="buddyLogin.js"></script>
+</html>
